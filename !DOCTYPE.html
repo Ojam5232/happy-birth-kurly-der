@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birth Kurly-der</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #giftImage {
+            display: none;
+            margin-top: 20px;
+            max-width: 80%;
+            height: auto;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #e65c52;
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Birth Kurly-der</h1>
+    <button id="showGiftButton">선물받기</button>
+    <img id="giftImage" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20210706_28%2F1625529473325IUkQ0_JPEG%2F26665319047311262_756726721.jpeg&type=sc960_832">
+
+    <script>
+        document.getElementById("showGiftButton").onclick = function() {
+            document.getElementById("giftImage").style.display = "block";
+        };
+    </script>
+</body>
+</html>
